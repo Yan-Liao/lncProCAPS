@@ -1,12 +1,13 @@
 # lncProCAPS
 An lncRNA-protein interaction predict tool based on  neural network and capsule net.
 
+Need Linux operating system.
 install:Download the package, and make sure you have installed these package:
-numpy
+numpy(>=1.16.4)
 torch
 argparse
-tqdm
-shutil
+tqdm(>=4.32.1)
+shutil(>=1.0.0)
 
 How to use this?
 ***step 1: extract features
