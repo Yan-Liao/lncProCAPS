@@ -51,48 +51,7 @@ If you have predict pairs'label, and want to know the model's accuracy, add this
 python lncProCAPS.py -m predict -o (result file path,default="./data/output_data/result") -p (predict pairs file path) -l (predict_pairs_label_file's path)
 *****************************
 
-
-
-
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -v, --version         show program's version number and exit
-  -e_f, --ext_fea {True,False}
-                        Whether to extract features. Default is "False"
-  -r_f, --rna_fasta (RNA_seq_file's path)
-                        (If --ext_fea is True,required this.)Need rna sequence
-                        fasta file, witch contain /predict rna sequence. And
-                        if you want to retrain the model, this file must
-                        contain/ retrain rna sequence,too.
-  -p_f, --pro_fasta (protein_seq_file's path)
-                        (If --ext_fea is True,required this.)Need protein
-                        sequence fasta file, witch contain/ predict protein
-                        sequence. And if you want to retrain the model, this
-                        file must contain/ retrain protein sequence,too.
-  -m, --mode {predict,retrain,None}
-                        (Required) The mode used for predict or retrain.
-                        Default is "None".
-                        (When you are extracting features, this optinon shoule be None.)      
-  -o, --out (output_file's path)
-                        The output file of result.(File can not exist,but path
-                        must exist.)
-			default="./data/output_data/result"
-  -d, --device {True,False}
-                        Whether to use GPU to accelerate calculation.(Default
-                        is "False")
-  -i_p, --interact_pairs (interact_pairs_file's path)
-                        (If --mode is "retrain",required this.)
-                        Interact_pairs_file.
-  -n_p, --not_interact_pairs (not interact_pairs_file's path)
-                        (If --mode is "retrain",required this.)
-                        NOT_interact_pairs_file.
-  -u_r, --use_retrained_model {True,False}
-                        Whether to use retrained model to predict.(Default is
-                        "False")
-  -p, --predict_pairs (predict_pairs_file's path)
-                        (If --mode is "predict",required this.)
-                        Predict_pairs_file
-  -l, --predict_pairs_label (predict_pairs_label_file's path)
-                        If your predict pairs have labels, input file can get
-                        forecast accuracy.
+You can see more optional arguments with  
+*****************************
+python lncProCAPS.py -h
+*****************************
